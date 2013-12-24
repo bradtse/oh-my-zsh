@@ -25,12 +25,28 @@ then
 else
     alias history='fc -l 1'
 fi
+
 # List direcory contents
 alias lsa='ls -lah'
-alias l='ls -la'
-alias ll='ls -l'
+alias l='ls -lF'
+alias ll='ls -laF'
 alias la='ls -lA'
 alias sl=ls # often screw this up
 
-alias afind='ack-grep -il'
+# Ack that ignores case and lists only lines that have match
+alias afind='ack -il'
 
+# Safe interactive operations
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Human readable figures
+alias df='df -h'
+alias du='du -h'
+
+# Run sudo vim and skips creation of swap files
+alias svim='sudo vim -n'
+
+# Aliases to activate virtual python environments. These are machine dependent.
+alias activate-webserver='source ~/webserver-brad/bin/activate'
