@@ -160,3 +160,10 @@ build_prompt() {
 }
 
 PROMPT='%{%f%b%k%}$(build_prompt) '
+
+# Keep track of the original prompt so that I can manipulate it later
+export ORIG_PROMPT=${PROMPT}
+# zle always starts in insert mode, so I indicate that here since I don't have
+# access to the newly created PROMPT in vim.zsh because config files are executed
+# before theme files
+PROMPT="%K{blue%F{red${VIM_INSERT}${PROMPT}"

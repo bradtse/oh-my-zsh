@@ -1,5 +1,7 @@
 # TODO: Explain what some of this does..
 
+# I do not use these key bindings since I use vi mode. See vim.zsh
+
 bindkey -e
 bindkey '\ew' kill-region
 bindkey -s '\el' "ls\n"
