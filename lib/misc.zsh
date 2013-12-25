@@ -14,4 +14,4 @@ export LESS="-R"
 
 export LC_CTYPE=$LANG
 
-export VIM_INSERT=" ✦"
+export VIM_INSERT_MODE='❉  '
