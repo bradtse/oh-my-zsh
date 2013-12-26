@@ -15,7 +15,6 @@ function zle-keymap-select zle-line-init {
     # Adds a visual indicator to PROMPT
     PROMPT="${${KEYMAP/vicmd/${ORIG_PROMPT}${VIM_INSERT_MODE}}/(main|viins)/${ORIG_PROMPT}%F{red${VIM_INSERT_MODE}%f}"
 
-
     # Resets the prompt to show any changes to it
     zle reset-prompt
 }
