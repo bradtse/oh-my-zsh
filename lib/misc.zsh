@@ -14,4 +14,5 @@ export LESS="-R"
 
 export LC_CTYPE=$LANG
 
+# The insert mode indicator for the command line prompt
 export VIM_INSERT_MODE='❉  '
