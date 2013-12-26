@@ -47,6 +47,3 @@ alias du='du -h'
 
 # Run sudo vim and skips creation of swap files
 alias svim='sudo vim -n'
-
-# Aliases to activate virtual python environments. These are machine dependent.
-alias activate-webserver='source ~/webserver-brad/bin/activate'
