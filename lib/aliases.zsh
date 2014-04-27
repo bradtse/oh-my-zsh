@@ -28,9 +28,9 @@ fi
 
 # List direcory contents
 alias lsa='ls -lah'
-alias l='ls -lF'
-alias ll='ls -laF'
-alias la='ls -lA'
+alias l='ls -lFh'
+alias ll='ls -laFh'
+alias la='ls -lAh'
 alias sl=ls # often screw this up
 
 # Ack that ignores case and lists only lines that have match
